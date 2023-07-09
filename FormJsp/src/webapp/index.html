@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>From page</title>
+<style>
+	.container{
+		width: 35%;
+		border: 2px solid black;
+		margin: auto;
+		padding: 20px;
+		font-size: 20px;
+	}
+	#myform  table tr td input{
+		font-size: 20px;
+		
+	}
+	h1{
+		text-align: center;
+	}
+	select{
+		font-size: 20px;
+	}
+	button{
+		font-size: 20px;
+		background-color: #2962FF;
+	}
+	button:nth-last-child(1){
+		background-color: grey;
+	}
+	
+</style>
+</head>
+<body>
+<div class="container">
+	
+	<form  method="get" id="myform" action="RegisterServlet">
+		<h1>Registration Form</h1>
+		<table>
+			<tr>
+				<td>
+					Enter your name:
+				</td>
+				<td>
+					<input type="text" name="user_name">
+				</td>
+			</tr>
+				<tr>
+				<td>
+					Enter your email:
+				</td>
+				<td>
+					<input type="email" name="user_email">
+				</td>
+			</tr>
+				<tr>
+				<td>
+					Enter your password:
+				</td>
+				<td>
+					<input type="password" name="user_password">
+				</td>
+			</tr>
+				<tr>
+				<td>
+					Select Gender&nbsp;
+				</td>
+				<td>
+					<input type="radio" name="user_gender" value="male">Male  &nbsp; &nbsp;  &nbsp;  <input type="radio" name="user_gender" value="female">Female
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					 Internship Section &nbsp;
+				</td>
+				<td>
+					<select name="user_section">
+						<option value="" disabled selected>--select--</option>
+						<option value="Java">Java</option>
+						<option value="Web">Web</option>
+						<option value="Networking">Networking</option>
+						<option value="Database">Database</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				
+				</td>
+				<td>
+					<button type="submit">Register</button>
+					<button type="reset">Reset</button>
+				</td>
+			</tr>
+		</table>
+		
+	</form>
+	
+</div>
+</body>
+</html>
