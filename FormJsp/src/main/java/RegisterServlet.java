@@ -38,5 +38,34 @@ public class RegisterServlet extends HttpServlet {
 	      pw.write("<h3> Course:  "+co+"<h3>");
 	     
 	}
-
+//for db 
+// 	String name = request.getParameter("name");
+// 	      String department = request.getParameter("dept");
+// 	      String type = request.getParameter("type");
+// 		String pl = request.getParameter("pl");
+// 	      String section = request.getParameter("sec");
+// 	      String designation = request.getParameter("desig");
+// //
+// 	      response.setContentType("text/html");
+// 	      PrintWriter pw=response.getWriter();
+	      
+// 	      try {
+// 	    	  Class.forName("com.mysql.jdbc.Driver");
+// 	    	  Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/contact_form","root","");
+// 	    	  PreparedStatement ps = conn.prepareStatement("insert into survey_data(name,department,type, pl,section,designation) values(?,?,?,?,?,?);");
+// 	    	    ps.setString(1,name);
+// 	    	    ps.setString(2,department);
+// 	    	    ps.setString(3,type);
+// 	    	    ps.setString(4,pl);
+// 	    	    ps.setString(5,section);
+// 	    	    ps.setString(6,designation);
+// 	    	    int x = ps.executeUpdate();
+// 	    	    if(x>0) {
+// 	    	    	pw.write("<h1>Data saved successfully</h1>");
+// 	    	    }else {
+// 	    	    	pw.write("<h1>Data Cannot be saved</h1>");
+// 	    	    }
+// 	      }catch(Exception e) {
+// 	    	  System.out.println(e);
+// 	      }
 }
